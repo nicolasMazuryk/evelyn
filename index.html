@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="globals.css" />
   <link rel="stylesheet" href="reset.min.css" />
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:500,400,600" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <!-- <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:500,400,600" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:500,400,600"></noscript>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -36,14 +36,14 @@
             <p class="download-instructions">Download Telegram and start making money</p>
             <div class="store-buttons">
               <a class="store-button" href="https://play.google.com/store/apps/details?id=org.telegram.messenger" target="_blank" ref="noopener">
-                <img class="store-icon" src="https://c.animaapp.com/jajYC0b8/img/playstore-2.svg" />
+                <img class="store-icon" src="https://c.animaapp.com/jajYC0b8/img/playstore-2.svg" alt="icon" />
                 <div class="button-content">
                   <div class="store-text">GET IT ON</div>
-                  <img class="store-logo" src="https://c.animaapp.com/jajYC0b8/img/path90-2.svg" />
+                  <img class="store-logo" src="https://c.animaapp.com/jajYC0b8/img/path90-2.svg" alt="logo" />
                 </div>
               </a>
               <a class="store-button" href="https://apps.apple.com/us/app/telegram-messenger/id686449807" target="_blank" ref="noopener">
-                <img class="store-icon" src="https://c.animaapp.com/jajYC0b8/img/apple-2.svg" />
+                <img class="store-icon" src="https://c.animaapp.com/jajYC0b8/img/apple-2.svg" alt="icon 2" />
                 <div class="button-content">
                   <div class="store-text">Download on the</div>
                   <div class="store-name">App Store</div>
@@ -85,45 +85,7 @@
   </div>
   </div>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const carousel = document.querySelector('.carousel');
-      const carouselTrack = document.querySelector('.carousel-track');
-
-      let items = document.querySelectorAll('.carousel-item');
-      
-      const itemCount = items.length;
-      const multiplier = 20
-
-      carouselTrack.style.animationDuration = `${multiplier * 30}s`;
-
-      for (let i = 0; i < multiplier - 1; i++) {
-        for (let j = 0; j < itemCount; j++) {
-          const clone = items[j].cloneNode(true);
-          clone.setAttribute('alt', `User feedback ${i*j}`);
-          clone.setAttribute('width', "");
-          clone.setAttribute('height', "");
-          carouselTrack.appendChild(clone);
-        }
-      }
-
-      items = document.querySelectorAll('.carousel-item');
-
-      carousel.addEventListener('mouseover', () => {
-        carousel.classList.add('paused');
-      });
-
-      carousel.addEventListener('mouseout', () => {
-        carousel.classList.remove('paused');
-      });
-
-      carousel.addEventListener('touchstart', () => {
-        carousel.classList.add('paused');
-      });
-
-      carousel.addEventListener('touchend', () => {
-        carousel.classList.remove('paused');
-      })
-    });
+document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelector(".carousel"),t=document.querySelector(".carousel-track");let s=document.querySelectorAll(".carousel-item");const o=s.length;t.style.animationDuration="600s";for(let e=0;e<19;e++)for(let d=0;d<o;d++){const o=s[d].cloneNode(!0);o.setAttribute("alt","User feedback "+e*d),o.setAttribute("width",o.getAttribute("width")),o.setAttribute("height",o.getAttribute("height")),t.appendChild(o)}s=document.querySelectorAll(".carousel-item"),e.addEventListener("mouseover",(()=>{e.classList.add("paused")})),e.addEventListener("mouseout",(()=>{e.classList.remove("paused")})),e.addEventListener("touchstart",(()=>{e.classList.add("paused")})),e.addEventListener("touchend",(()=>{e.classList.remove("paused")}))}));
   </script>
 </body>
 
