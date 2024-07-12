@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="hero-section">
+      <div class="gradient-wrapper">
+        <div class="left-info-block">
+          <p class="main-heading">
+            <span class="highlight">Learn and earn </span>
+            <span class="sub-highlight">absolutely free</span>
+            <span class="highlight"> of charge!</span>
+          </p>
+          <p class="subtext">
+            Join the Telegram channel, get daily free trading signals, and start earning today.
+          </p>
+          <p class="additional-info">Easy start for beginners, 24/7 support, and real results.</p>
+          <div class="buttons-wrapper">
+            <a href="https://t.me/+Rdl73X2f7741ZWE6" target="_blank" ref="noopener">
+              <div class="channel-button" >
+                <div class="button-text">CHANNEL</div>
+              </div>
+            </a>
+            <p class="download-instructions">Download Telegram and start making money</p>
+            <div class="store-buttons">
+              <a class="store-button" href="https://play.google.com/store/apps/details?id=org.telegram.messenger" target="_blank" ref="noopener">
+                <img class="store-icon" src="https://c.animaapp.com/jajYC0b8/img/playstore-2.svg" />
+                <div class="button-content">
+                  <div class="store-text">GET IT ON</div>
+                  <img class="store-logo" src="https://c.animaapp.com/jajYC0b8/img/path90-2.svg" />
+                </div>
+              </a>
+              <a class="store-button" href="https://apps.apple.com/us/app/telegram-messenger/id686449807" target="_blank" ref="noopener">
+                <img class="store-icon" src="https://c.animaapp.com/jajYC0b8/img/apple-2.svg" />
+                <div class="button-content">
+                  <div class="store-text">Download on the</div>
+                  <div class="store-name">App Store</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stats-section">
+      <p class="channel-stats">
+        <span class="highlight">The Telegram channel has more than 15,000 members from all over the world.<br />The
+          aggregate profit of
+          the trading club members already
+        </span>
+        <span class="sub-highlight">exceeds $470,000 daily.</span>
+      </p>
+      <p class="testimonials-heading">
+        Testimonials from members who have already achieved financial success thanks to Evelyn Morgan:
+      </p>
+      <div class="carousel">
+        <div class="carousel-track">
+          <img class="carousel-item" src="./img/screen-1.webp" />
+          <img class="carousel-item" src="./img/screen-2.webp" />
+          <img class="carousel-item" src="./img/screen-3.webp" />
+          <img class="carousel-item" src="./img/screen-4.webp" />
+          <img class="carousel-item" src="./img/screen-5.webp" />
+        </div>
+      </div>
+      <div class="bottom-button">
+        <a href="https://t.me/+Rdl73X2f7741ZWE6" target="_blank" ref="noopener">
+          <div class="channel-button" >
+            <div class="button-text">CHANNEL</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const carousel = document.querySelector('.carousel');
+      const carouselTrack = document.querySelector('.carousel-track');
+
+      let items = document.querySelectorAll('.carousel-item');
+      
+      const itemCount = items.length;
+      const multiplier = 20
+
+      carouselTrack.style.animationDuration = `${multiplier * 30}s`;
+
+      for (let i = 0; i < multiplier - 1; i++) {
+        for (let j = 0; j < itemCount; j++) {
+          const clone = items[j].cloneNode(true);
+          carouselTrack.appendChild(clone);
+        }
+      }
+
+      items = document.querySelectorAll('.carousel-item');
+
+      carousel.addEventListener('mouseover', () => {
+        carousel.classList.add('paused');
+      });
+
+      carousel.addEventListener('mouseout', () => {
+        carousel.classList.remove('paused');
+      });
+
+      carousel.addEventListener('touchstart', () => {
+        carousel.classList.add('paused');
+      });
+
+      carousel.addEventListener('touchend', () => {
+        carousel.classList.remove('paused');
+      })
+    });
+  </script>
+</body>
+
+</html>
