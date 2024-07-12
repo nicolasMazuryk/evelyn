@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="globals.css" />
+  <title>Evelyn Trader - Learn and Earn Free Trading Signals</title>
+  <meta name="description" content="Join the Telegram channel, get daily free trading signals, and start earning today. Easy start for beginners, 24/7 support, and real results.">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <div class="container">
     <div class="hero-section">
@@ -63,11 +62,11 @@
       </p>
       <div class="carousel">
         <div class="carousel-track">
-          <img class="carousel-item" src="./img/screen-1.webp" />
-          <img class="carousel-item" src="./img/screen-2.webp" />
-          <img class="carousel-item" src="./img/screen-3.webp" />
-          <img class="carousel-item" src="./img/screen-4.webp" />
-          <img class="carousel-item" src="./img/screen-5.webp" />
+          <img class="carousel-item" src="./img/screen-1.webp" width="" height="" alt="User feedback 1" />
+          <img class="carousel-item" src="./img/screen-2.webp" width="" height="" alt="User feedback 2" />
+          <img class="carousel-item" src="./img/screen-3.webp" width="" height="" alt="User feedback 3" />
+          <img class="carousel-item" src="./img/screen-4.webp" width="" height="" alt="User feedback 4" />
+          <img class="carousel-item" src="./img/screen-5.webp" width="" height="" alt="User feedback 5" />
         </div>
       </div>
       <div class="bottom-button">
@@ -117,6 +116,24 @@
         carousel.classList.remove('paused');
       })
     });
+
+    // Function to dynamically load a CSS file
+    function loadCSS(href) {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = href;
+      link.onload = function() {
+        console.log(href + ' loaded successfully.');
+      };
+      link.onerror = function() {
+        console.error('Error loading ' + href);
+      };
+      document.head.appendChild(link);
+    }
+
+    // Load the CSS files
+    loadCSS("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+    loadCSS("https://fonts.googleapis.com/css?family=Inter+Tight:500,400,600,700");
   </script>
 </body>
 
