@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evelyn Trader - Learn and Earn Free Trading Signals</title>
   <meta name="description" content="Join the Telegram channel, get daily free trading signals, and start earning today. Easy start for beginners, 24/7 support, and real results.">
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="reset.min.css" />
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:500,400,600" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:500,400,600"></noscript>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -94,6 +99,9 @@
       for (let i = 0; i < multiplier - 1; i++) {
         for (let j = 0; j < itemCount; j++) {
           const clone = items[j].cloneNode(true);
+          clone.setAttribute('alt', `User feedback ${i*j}`);
+          clone.setAttribute('width', "");
+          clone.setAttribute('height', "");
           carouselTrack.appendChild(clone);
         }
       }
@@ -116,24 +124,6 @@
         carousel.classList.remove('paused');
       })
     });
-
-    // Function to dynamically load a CSS file
-    function loadCSS(href) {
-      var link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = href;
-      link.onload = function() {
-        console.log(href + ' loaded successfully.');
-      };
-      link.onerror = function() {
-        console.error('Error loading ' + href);
-      };
-      document.head.appendChild(link);
-    }
-
-    // Load the CSS files
-    loadCSS("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-    loadCSS("https://fonts.googleapis.com/css?family=Inter+Tight:500,400,600,700");
   </script>
 </body>
 
